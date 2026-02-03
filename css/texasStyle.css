@@ -1,0 +1,96 @@
+.TILogo {
+    display: block;
+    margin: 1rem auto;
+    max-width: 300px;
+     height: auto; 
+  border-radius: 8px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FAFAFA;
+    color: var(--text-main);
+    line-height: 1.6;
+    padding-bottom: 4rem;
+    border-radius: 20px;
+    min-height: calc(100% - 30px);
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+h1 {
+    font-size: 3rem; /* clean and readable */
+    font-weight: 300;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-main);
+    font-weight: bold;
+}
+
+
+ .description1 {
+    max-width: 1200px;  
+    margin: 2rem auto;    
+    line-height: 1.8;     
+    letter-spacing: 0.5px; 
+     font-size: 1.1rem;
+    color: var(--text-light);
+    width: 80%;
+    text-align: center;
+}
+
+
+.products{
+
+    border-collapse: collapse;
+    align-items: center;
+    margin: 2rem auto;
+    width: 80%;
+}
+
+ td {
+  padding: 10px;
+   text-align: left;
+}
+
+th {
+    background-color:#3131c7;
+    padding: 10px;
+     text-align: center;
+    color: #FFFFFF;          
+
+    }
+
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none; 
+    text-align: center;
+    vertical-align: middle;
+    
+    padding: 10px 24px;
+    min-width: 100px; 
+    
+    background-color: #3131c7; 
+    color: #FFFFFF;          
+    
+    border-radius: 6px;      
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+a:hover {
+    background-color: #2525a3; 
+    opacity: 0.9;
+}
+
+a:active {
+    transform: scale(0.96);
+}

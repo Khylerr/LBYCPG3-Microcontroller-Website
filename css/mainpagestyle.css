@@ -79,6 +79,33 @@ h2 {
     max-width: 700px; /* Better readability */
     margin: 0 auto 4rem auto;
     text-align: center;
+       margin-right: 150px;
+}
+
+.description2 {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    max-width: 700px; /* Better readability */
+    margin: 0 auto 4rem auto;
+    text-align: center;
+     margin-top: 25px;
+        margin-right: 150px;
+}
+
+
+.description3 {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    max-width: 700px; 
+    margin: 0 auto 4rem auto;
+    text-align: center;
+     margin-top: 25px;
+      margin-bottom: 20px;
+        margin-right: 150px;
+      font-weight: bold;
+
+
+
 }
 
 /* Styling the tables. DONT TOUCH */
