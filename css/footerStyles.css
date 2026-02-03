@@ -1,0 +1,95 @@
+/* Variables */
+:root {
+    --bg-color: #FAFAFA;
+    --text-color: #2D2D2D;
+    --text-light: #666666;
+    --accent-color: #0056D2;
+    --border-color: rgba(0,0,0,0.08);
+    --font-main: 'Inter', sans-serif;
+    --font-tech: 'Orbitron', sans-serif;
+}
+
+/*   Global Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+/*   Main Layout   */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0 2rem;
+    
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    
+    border-top: 1px solid var(--border-color);
+}
+
+/*   Footer Container   */
+.footer-content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*   Typography & Branding   */
+.copyright {
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+.brand {
+    font-family: var(--font-tech);
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+/*   Links Section   */
+.footer-links {
+    font-size: 0.85rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
+
+.separator {
+    margin: 0 8px;
+    color: #DDD;
+    font-size: 0.8rem;
+}
+
+/*   Responsive   */
+@media (max-width: 500px) {
+    .footer-content {
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .footer-links {
+        display: none;
+    }
+}

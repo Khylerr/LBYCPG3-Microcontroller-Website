@@ -1,86 +1,100 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
-    <title>Microcontrollers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>μP: Microcontroller Hub</title>
     <link rel="stylesheet" href="css/mainpagestyle.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to μP</h1>
-    <p class = "label">What are Microcontrollers?</p>
-    <p class = "description"> A microcontroller (often abbreviated as MCU) is essentially a compact, self-contained computer on a single microchip,
-       designed to control specific tasks within an electronic system. Unlike a general-purpose computer that runs multiple complex programs at once,
-        a microcontroller is dedicated to executing a single repetitive program efficiently and reliably. It integrates three main components
-         into one tiny package: a Central Processing Unit (CPU) to process data, Memory (Flash/ROM to store the program and RAM for temporary data), and Input/Output (I/O) Peripherals to communicate with the outside world (like sensors, motors, and displays). Because they are affordable, energy-efficient, and adaptable, microcontrollers are the "brains" behind countless everyday devices, from microwave ovens and TV remotes 
-       to the complex braking systems in your car.</p>
 
-    <p class = "manufacturers label">Major Manufacturers and Their Microcontroller Families</p>
-    <p class = "manufacturers label">Different companies manufacture microcontrollers tailored to specific needs, ranging from simple low-power tasks to complex industrial computations. These "families" of chips differ in their architecture (how they process instructions), speed, and power consumption.</p>
-    <p class = "table caption">Here is a breakdown of the industry leaders and their most popular microcontroller families:</p>
+    <div class="container">
+        <header class="hero-section">
+            <div class="content-block">
+                <h2>What are Microcontrollers?</h2>
+                <p class="description">
+                    A microcontroller (MCU) is a compact, self-contained computer on a single microchip, designed to control specific tasks within an electronic system. Unlike a general-purpose computer, an MCU is dedicated to executing a single repetitive program efficiently. It integrates a CPU, Memory, and I/O Peripherals into one tiny package. They are the "brains" behind everyday devices, from microwave ovens to automotive braking systems.
+                </p>
+            </div>
+        </header>
+        [Image of microcontroller architecture diagram block diagram]
 
+        <section class="table-section">
+            <h2>Industry Leaders & Families</h2>
+            <p class="subtitle">A breakdown of the architectures powering the world.</p>
+            
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Manufacturer</th>
+                            <th>Family</th>
+                            <th>Notable Characteristics</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>STMicroelectronics</td><td>STM32</td><td>ARM Cortex-M cores, vast peripheral eco-system</td></tr>
+                        <tr><td>Microchip</td><td>PIC, AVR</td><td>Beginner friendly, robust 8-bit to 32-bit options</td></tr>
+                        <tr><td>Espressif</td><td>ESP32, ESP8266</td><td>Standard for IoT (Wi-Fi/BT integrated)</td></tr>
+                        <tr><td>Texas Instruments</td><td>MSP430, Tiva C</td><td>Ultra-low power consumption leaders</td></tr>
+                        <tr><td>NXP</td><td>Kinetis, i.MX</td><td>High-performance, real-time cross-over processors</td></tr>
+                        <tr><td>Infineon</td><td>Aurix, TriCore</td><td>Automotive-grade safety and reliability</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-    <table>
+        <section class="grid-section">
+            <h2>Explore Manufacturers</h2>
+            <p class="subtitle">Select a company to view datasheets and specs.</p>
 
-      <caption class = "industry-leaders">Popular Industry Leaders</caption>
+            <div class="grid-container">
+                <a href="stmicro.html" class="brand-card">
+                    <div class="card-image">
+                        <img src="stm.jpg" alt="STMicroelectronics Board">
+                    </div>
+                    <span class="brand-name">STMicroelectronics</span>
+                </a>
 
-      <tr><th>Manufacturer</th><th>Microcontroller Family</th> <th> Notable Characteristics</th></tr>
-      <tr><td>STMicroelectronics</td><td>STM32</td> <td>ARM Cortex-M cores, wide range of peripherals</td></tr>
-      <tr><td>Microchip Technology</td><td>PIC, AVR</td> <td>Low-cost, easy-to-use, wide variety of architectures</td></tr>
-      <tr><td>Espressif Systems</td><td>ESP32, ESP8266</td> <td>Integrated Wi-Fi and Bluetooth, low power consumption</td></tr>
-      <tr><td>Texas Instruments</td><td>MSP430, Tiva C Series</td> <td>MSP430: ultra-low power; Tiva C: ARM Cortex-M4F cores</td></tr>
-      <tr><td>NXP Semiconductors</td><td>Kinetis, i.MX RT Series</td> <td>Kinetis: ARM Cortex-M cores; i.MX RT: real-time processing with ARM Cortex-A cores</td></tr>
-      <tr><td>Infineon Technologies</td><td>Aurix, TriCore</td> <td>Aurix: automotive-grade safety features; TriCore: high-performance microcontrollers for automotive applications</td></tr>
+                <a href="microchip.html" class="brand-card">
+                    <div class="card-image">
+                        <img src="microchip.jpg" alt="Microchip Technology Chip">
+                    </div>
+                    <span class="brand-name">Microchip</span>
+                </a>
 
-    </table>
+                <a href="expressif.html" class="brand-card">
+                    <div class="card-image">
+                        <img src="expressif.jpg" alt="Espressif Chip">
+                    </div>
+                    <span class="brand-name">Espressif</span>
+                </a>
 
+                <a href="texas.html" class="brand-card">
+                    <div class="card-image">
+                        <img src="TI.jpg" alt="Texas Instruments Logo">
+                    </div>
+                    <span class="brand-name">Texas Instruments</span>
+                </a>
 
+                 <a href="nxp.html" class="brand-card">
+                    <div class="card-image">
+                        <img src="nxp.png" alt="NXP Logo">
+                    </div>
+                    <span class="brand-name">NXP Semi</span>
+                </a>
 
-    <p>Explore Different Microcontrollers here!</p>
-
-     <p class = "company-select">Select your chosen company.</p>
-
-   <div class="grid-container">
-
-  <a href="stmicro.html" class="brand-card">
-    <img src="stm.jpg" alt="STMMicroelectronics Logo" width="200" height="100">
-    <button class="STMicro">STMicroelectronics</button>
-  </a>
-
-  <a href="microchip.html" class="brand-card">
-    <img src="microchip.jpg" alt="Microchip Technology Logo" width="200" height="100">
-    <button class="Microchip">Microchip Technology</button>
-  </a>
-
-  <a href="expressif.html" class="brand-card">
-    <img src="expressif.jpg" alt="Espressif Systems Logo" width="200" height="100">
-    <button class="Expressif">Espressif Systems</button>
-  </a>
-
-  <a href="texas.html" class="brand-card">
-    <img src="TI.jpg" alt="Texas Instruments Logo" width="200" height="100">
-    <button class="TexasInstruments">Texas Instruments</button>
-  </a>
-
-  <a href="nxp.html" class="brand-card">
-    <img src="nxp.png" alt="NXP Semiconductors Logo" width="200" height="100">
-    <button class="NXP">NXP Semiconductors</button>
-  </a>
-
-  <a href="infineon.html" class="brand-card">
-    <img src="infineon.png" alt="Infineon Technologies Logo" width="200" height="100">
-    <button class="Infineon">Infineon Technologies</button>
-  </a>
-
-</div>
-
-
+                 <a href="infineon.html" class="brand-card">
+                    <div class="card-image">
+                        <img src="infineon.png" alt="Infineon Logo">
+                    </div>
+                    <span class="brand-name">Infineon</span>
+                </a>
+            </div>
+        </section>
+    </div>
 
 </body>
-
-
 </html>
