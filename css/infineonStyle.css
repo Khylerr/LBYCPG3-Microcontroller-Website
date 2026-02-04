@@ -1,3 +1,9 @@
+html {
+    /* Color feels the gap in the rounded corners */
+    background-color: #E8EAF6; /* Light grey-blue to match the vibe */
+    height: 100%;
+}
+
 .infineonLogo {
     display: block;
     margin: 1rem auto;
