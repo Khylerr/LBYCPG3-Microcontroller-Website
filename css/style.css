@@ -542,3 +542,18 @@ body.manufacturer-page a:active {
         display: none;
     }
 }
+
+.declaration {
+    margin-top: 4rem;
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid #E8EAF6;
+}
+
+.declaration p {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    font-style: italic;
+    max-width: 600px;
+    margin: 0 auto;
+}

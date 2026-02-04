@@ -1,6 +1,8 @@
 # Silly Core: Microcontroller Hub
 
-A website showcasing information about various microcontroller manufacturers.
+LBYCPG3 Microcontroller Website Project
+
+Group Number: 5
 
 ## How to Run
 
@@ -14,8 +16,18 @@ Open `index.html` in your browser.
 
 ## Developers
 
-- Miguel Andrei Abad
-- Khyler Welsche Chua
-- Ron John Galvez
-- Deandre Antonio Marasigan
-- Brian David Metrillo
+- Khyler Welsche Chua - Frameset Architect (designs frame layout and linking logic)
+- Deandre Antonio Marasigan - Navigation Designer (implements menu and target behavior)
+- Ron John Galvez - Content Designer (prepares main content pages)
+- Miguel Andrei Abad - CSS Maker (designs and validates stylesheet)
+- Brian David Metrillo - Integrator & Verifier (consistency checks, final assembly)
+
+## Browser(s) Tested
+
+- Google Chrome
+- Mozilla Firefox
+- Safari
+
+## Declaration
+
+"We certify that no AI tools were used in the design, coding, debugging, or writing of this project."
