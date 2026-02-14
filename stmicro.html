@@ -1,63 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STMicroelectronics</title>
+    <title>STMicroelectronics - Silly Core</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
 </head>
 
-<body class="manufacturer-page">
-    <img class = "stmicrologo" src="assets/stm.jpg" alt="logo">
-      <h1>STMicro</h1>
+<body>
 
-     <p class = "description1">	STMicroelectronics is a global semiconductor company and integrated device manufacturer (IDM) that designs, manufactures, and delivers microchips embedded in products from electric vehicles and industrial systems to consumer electronics and everyday connected devices. With around 48,000 employees (including ~9,000 in R&D) and 200,000+ customers worldwide, ST focuses its innovation on long-term trends such as smart mobility, edge-AI-enabled connected technologies, and sustainability.
-     </p>
-  
-      <table class = "products">
-                    <thead>
-                        <tr>
-                            <th>Product</th>
-                            <th>Description</th>
-                            <th>Datasheet</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>STM32F103x8 Microcontroller </td>
-                            <td>
-                                <ul>
-                                <li>The STM32 family of 32-bit microcontrollers based on the Arm Cortex®-M processor is designed to offer new degrees of freedom to MCU users. It offers products combining very high performance, real-time capabilities, digital signal processing, low-power / low-voltage operation, and connectivity, while maintaining full integration and ease of development. </li>
-                                <li> The unparalleled range of STM32 microcontrollers, based on an industry-standard core, comes with a vast choice of tools and software to support project development, making this family of products ideal for both small projects and end-to-end platforms.     </li>
-                               </ul></td>
-                            </td>
-                            <td><a href="https://www.st.com/resource/en/datasheet/stm32f103c8.pdf" target="_blank">Download</a> </td>
-                        </tr>
-                        <tr><td>STM8S003F3 </td>
-                            <td>
-                                <ul>
-                                <li> ST's 8-bit microcontroller platform is implemented around a high-performance 8-bit core and a state-of-the-art set of peripherals. This platform is manufactured using an ST-proprietary 130 nm embedded non-volatile memory technology.</li>
-                                <li> The STM8 allows fast and safe development through enhanced stack pointer operations, advanced addressing modes and new instructions.</li>
-                                </ul>
-                            </td>
-                            <td><a href="https://www.st.com/resource/en/datasheet/stm8s003f3.pdf" target="_blank">Download</a> </td>
-                            
-                        <tr><td>I3G4250D Gyroscope</td>
-                            <td>
-                                <ul>
-                                <li>The I3G4250D is a low-power 3-axis angular rate sensor able to provide unprecedented stability at zero-rate level and sensitivity over temperature and time. It includes a sensing element and an IC interface capable of providing the measured angular rate to the application through a standard SPI digital interface. An I²C compatible interface is also available. </li>
-                                <li> The sensing element is manufactured using a dedicated micromachining process developed by STMicroelectronics to produce inertial sensors and actuators on silicon wafers.    </li>
-                               </ul></td>
-                            </td>
-                            <td><a href="https://www.st.com/resource/en/datasheet/i3g4250d.pdf" target="_blank">Download</a> </td>
-                        </tr>
-                        
-                </table>
+    <header class="site-header">
+        <div class="header-inner">
+            <h1><span class="logo-symbol">Silly Core</span> : Your Home for all things Microcontrollers</h1>
+        </div>
+    </header>
 
-    <div class="declaration">
-        <p>"We certify that no AI tools were used in the design, coding, debugging, or writing of this project."</p>
+    <div class="page-layout-wrapper">
+        <aside id="sidebar" class="sidebar-container">
+            <button id="menu-toggle" class="glass-toggle-btn" aria-label="Toggle Navigation">
+                <span class="arrow-icon">›</span>
+            </button>
+
+            <p class="section-label">General</p>
+            <div class="button-group">
+                <a href="index.html" class="menu-btn">Home</a>
+                <a href="aboutpage.html" class="menu-btn">About Us</a>
+            </div>
+
+            <p class="section-label">Manufacturers</p>
+            <div class="button-group">
+                <a href="stmicro.html" class="menu-btn" style="color: var(--accent); border-bottom-color: var(--accent);">STMicro</a>
+                <a href="microchip.html" class="menu-btn">Microchip</a>
+                <a href="expressif.html" class="menu-btn">Espressif</a>
+                <a href="texas.html" class="menu-btn">Texas Inst.</a>
+                <a href="nxp.html" class="menu-btn">NXP Semi</a>
+                <a href="infineon.html" class="menu-btn">Infineon</a>
+            </div>
+        </aside>
+
+        <main class="main-content-scrollable">
+            <div class="content-card">
+                
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <img src="assets/stm.jpg" alt="STMicroelectronics Logo" style="max-width: 300px; height: auto; display: inline-block;">
+                </div>
+
+                <h1 style="text-align: center; margin-top: 0;">STMicroelectronics</h1>
+
+                <p class="description">
+                    STMicroelectronics is a global semiconductor company and integrated device manufacturer (IDM) that designs, manufactures, and delivers microchips embedded in products from electric vehicles and industrial systems to consumer electronics and everyday connected devices. With around 48,000 employees (including ~9,000 in R&D) and 200,000+ customers worldwide, ST focuses its innovation on long-term trends such as smart mobility, edge-AI-enabled connected technologies, and sustainability.
+                </p>
+
+                <div class="search-container">
+                    <input type="text" id="tableSearch" placeholder="Search for specs (e.g., '32-bit', 'Cortex', '5V')..." class="glass-search-input">
+                </div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Description</th>
+                                <th>Datasheet</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>STM32F103x8 Microcontroller</td>
+                                <td>
+                                    <ul>
+                                        <li>The STM32 family of 32-bit microcontrollers based on the Arm Cortex®-M processor is designed to offer new degrees of freedom to MCU users. It offers products combining very high performance, real-time capabilities, digital signal processing, low-power / low-voltage operation, and connectivity, while maintaining full integration and ease of development.</li>
+                                        <li>The unparalleled range of STM32 microcontrollers, based on an industry-standard core, comes with a vast choice of tools and software to support project development, making this family of products ideal for both small projects and end-to-end platforms.</li>
+                                    </ul>
+                                </td>
+                                <td><a href="https://www.st.com/resource/en/datasheet/stm32f103c8.pdf" target="_blank">Download</a></td>
+                            </tr>
+                            <tr>
+                                <td>STM8S003F3</td>
+                                <td>
+                                    <ul>
+                                        <li>ST's 8-bit microcontroller platform is implemented around a high-performance 8-bit core and a state-of-the-art set of peripherals. This platform is manufactured using an ST-proprietary 130 nm embedded non-volatile memory technology.</li>
+                                        <li>The STM8 allows fast and safe development through enhanced stack pointer operations, advanced addressing modes and new instructions.</li>
+                                    </ul>
+                                </td>
+                                <td><a href="https://www.st.com/resource/en/datasheet/stm8s003f3.pdf" target="_blank">Download</a></td>
+                            </tr>
+                            <tr>
+                                <td>I3G4250D Gyroscope</td>
+                                <td>
+                                    <ul>
+                                        <li>The I3G4250D is a low-power 3-axis angular rate sensor able to provide unprecedented stability at zero-rate level and sensitivity over temperature and time. It includes a sensing element and an IC interface capable of providing the measured angular rate to the application through a standard SPI digital interface. An I²C compatible interface is also available.</li>
+                                        <li>The sensing element is manufactured using a dedicated micromachining process developed by STMicroelectronics to produce inertial sensors and actuators on silicon wafers.</li>
+                                    </ul>
+                                </td>
+                                <td><a href="https://www.st.com/resource/en/datasheet/i3g4250d.pdf" target="_blank">Download</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="declaration">
+                    <p>"We certify that no AI tools were used in the design, coding, debugging, or writing of this project."</p>
+                </div>
+            </div>
+        </main>
     </div>
 
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p class="copyright">&copy; 2026 <span class="brand">Silly Core</span>. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="disclosure.html">Disclosure</a> 
+                <span class="separator">|</span>
+                <a href="aboutpage.html">Developers</a> 
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>

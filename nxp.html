@@ -1,51 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NXP Semiconductors</title>
+    <title>NXP Semiconductors - Silly Core</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
 </head>
 
-<body class="manufacturer-page">
-    <img class = "nxpLogo" src="assets/nxp.png" alt="logo">
-      <h1>NXP Semiconductors</h1>    
-     <p class = "description1">	NXP Semiconductors N.V. is a Dutch semiconductor manufacturing and design company with headquarters in Eindhoven, Netherlands. It is the third largest European semiconductor company by market capitalization as of 2024. The company employs approximately 34,000 people in more than 30 countries and it reported revenues of $12.61 billion in 2024 The company's origins date back to the 1950s as part of Philips (Which is a multinational Dutch health technology company which used to engage in consumer electronics) and it became one of the world's largest semiconductor companies by the end of the 20th century. Philips spun off the company in 2006 and it has since operated independently.
-     </p>
-  
-      <table class = "products">
-                    <thead>
-                        <tr>
-                            <th>Product</th>
-                            <th>Description</th>
-                            <th>Datasheet</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>i.MX RT Crossover MCUs</td>
-                            <td>
-                                <ul>
-                                <li>The i.MX RT series bridges the gap between traditional microcontrollers and application processors by delivering application-processor-level performance, up to 1 GHz with the Cortex-M7 core, while retaining MCU simplicity like deterministic real-time response and no mandatory OS. These devices integrate rich peripherals including LCD controllers, camera interfaces, and high-speed connectivity (USB HS, Ethernet), making them ideal for demanding edge applications such as industrial HMIs, smart displays, and AI inference at the edge without the complexity of a full Linux-based system.</li>
-                               </ul></td>
-                            </td>
-                            <td><a href="https://www.digikey.com/en/htmldatasheets/production/4171369/0/0/1/mimxrt1011cae4a" target="_blank">Download</a> </td>
-                        </tr>
-                        <tr><td>S32 Automotive Platform  </td>
-                            <td>
-                                <ul>
-                                <li>The S32 platform is NXP's scalable automotive MCU family designed for next-generation vehicle architectures, featuring Cortex-M (S32K series for body/zone control), Cortex-R (S32R for radar/ADAS), and Cortex-A (S32G for vehicle networking/gateways) cores,all sharing a common software development environment to streamline code reuse across domains. Built for functional safety (ISO 26262 ASIL D), these MCUs include hardware features like lockstep cores, ECC-protected memories, and support for automotive networks (CAN FD, Ethernet TSN), enabling applications from electrification and battery management to autonomous driving systems with long-term (15+ year) supply guarantees.</li>
-                                </ul>
-                            </td>
-                            <td><a href="https://www.nxp.com.cn/docs/en/data-sheet/S32G3.pdf" target="_blank">Download</a> </td>
-                            
-                       
-                </table>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <h1><span class="logo-symbol">Silly Core</span> : Your Home for all things Microcontrollers</h1>
+        </div>
+    </header>
 
-    <div class="declaration">
-        <p>"We certify that no AI tools were used in the design, coding, debugging, or writing of this project."</p>
+    <div class="page-layout-wrapper">
+        <aside id="sidebar" class="sidebar-container">
+            <button id="menu-toggle" class="glass-toggle-btn" aria-label="Toggle Navigation"><span class="arrow-icon">›</span></button>
+            <p class="section-label">General</p>
+            <div class="button-group">
+                <a href="index.html" class="menu-btn">Home</a>
+                <a href="aboutpage.html" class="menu-btn">About Us</a>
+            </div>
+            <p class="section-label">Manufacturers</p>
+            <div class="button-group">
+                <a href="stmicro.html" class="menu-btn">STMicro</a>
+                <a href="microchip.html" class="menu-btn">Microchip</a>
+                <a href="expressif.html" class="menu-btn">Espressif</a>
+                <a href="texas.html" class="menu-btn">Texas Inst.</a>
+                <a href="nxp.html" class="menu-btn" style="color: var(--accent); border-bottom-color: var(--accent);">NXP Semi</a>
+                <a href="infineon.html" class="menu-btn">Infineon</a>
+            </div>
+        </aside>
+
+        <main class="main-content-scrollable">
+            <div class="content-card">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <img src="assets/nxp.png" alt="NXP Logo" style="max-width: 300px; height: auto; display: inline-block;">
+                </div>
+                <h1 style="text-align: center; margin-top: 0;">NXP Semiconductors</h1>
+                <p class="description">
+                    NXP Semiconductors N.V. is a Dutch semiconductor manufacturing and design company with headquarters in Eindhoven, Netherlands. It is the third largest European semiconductor company by market capitalization as of 2024. The company employs approximately 34,000 people in more than 30 countries and reported revenues of $12.61 billion in 2024.
+                </p>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Description</th>
+                                <th>Datasheet</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>i.MX RT Crossover MCUs</td>
+                                <td>
+                                    <ul>
+                                        <li>The i.MX RT series bridges the gap between traditional microcontrollers and application processors by delivering application-processor-level performance, up to 1 GHz with the Cortex-M7 core, while retaining MCU simplicity like deterministic real-time response and no mandatory OS. These devices integrate rich peripherals including LCD controllers, camera interfaces, and high-speed connectivity.</li>
+                                    </ul>
+                                </td>
+                                <td><a href="https://www.digikey.com/en/htmldatasheets/production/4171369/0/0/1/mimxrt1011cae4a" target="_blank">Download</a></td>
+                            </tr>
+                            <tr>
+                                <td>S32 Automotive Platform</td>
+                                <td>
+                                    <ul>
+                                        <li>The S32 platform is NXP's scalable automotive MCU family designed for next-generation vehicle architectures, featuring Cortex-M (S32K series for body/zone control), Cortex-R (S32R for radar/ADAS), and Cortex-A (S32G for vehicle networking/gateways) cores, all sharing a common software development environment to streamline code reuse across domains.</li>
+                                    </ul>
+                                </td>
+                                <td><a href="https://www.nxp.com.cn/docs/en/data-sheet/S32G3.pdf" target="_blank">Download</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="declaration"><p>"We certify that no AI tools were used in the design, coding, debugging, or writing of this project."</p></div>
+            </div>
+        </main>
     </div>
-
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p class="copyright">&copy; 2026 <span class="brand">Silly Core</span>. All rights reserved.</p>
+            <div class="footer-links"><a href="disclosure.html">Disclosure</a> <span class="separator">|</span> <a href="aboutpage.html">Developers</a></div>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>

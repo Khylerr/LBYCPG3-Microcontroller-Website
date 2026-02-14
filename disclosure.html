@@ -1,46 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disclosure</title>
+    <title>Disclosure - Silly Core</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
 </head>
-<body class="disclosure-page">
-    <h1>AI Disclosure</h1>
-    <p>We, the undersigned members of Silly Core, hereby declare that no artificial intelligence tools, including but not limited to AI-assisted coding, content generation, or design tools, were used in the creation of this website project. All code, content, and design elements were produced entirely through our own knowledge, skills, and effort.</p>
 
-    <div class="signatures">
-        <div class="signature-item">
-            <img src="assets/signature_abad.png" alt="Signature of Miguel Andrei Abad">
-            <p>Miguel Andrei Abad</p>
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <h1><span class="logo-symbol">Silly Core</span> : Your Home for all things Microcontrollers</h1>
         </div>
-        <div class="signature-item">
-            <img src="assets/signature_chua.png" alt="Signature of Khyler Welsche Chua">
-            <p>Khyler Welsche Chua</p>
-        </div>
-        <div class="signature-item">
-            <img src="assets/signature_galvez.png" alt="Signature of Ron John Galvez">
-            <p>Ron John Galvez</p>
-        </div>
-        <div class="signature-item">
-            <img src="assets/signature_marasigan.png" alt="Signature of Deandre Antonio Marasigan">
-            <p>Deandre Antonio Marasigan</p>
-        </div>
-        <div class="signature-item">
-            <img src="assets/signature_metrillo.png" alt="Signature of Brian David Metrillo">
-            <p>Brian David Metrillo</p>
-        </div>
+    </header>
+
+    <div class="page-layout-wrapper">
+        <aside id="sidebar" class="sidebar-container">
+            <button id="menu-toggle" class="glass-toggle-btn" aria-label="Toggle Navigation">
+                <span class="arrow-icon">›</span>
+            </button>
+
+            <p class="section-label">General</p>
+            <div class="button-group">
+                <a href="index.html" class="menu-btn">Home</a>
+                <a href="aboutpage.html" class="menu-btn">About Us</a>
+            </div>
+
+            <p class="section-label">Manufacturers</p>
+            <div class="button-group">
+                <a href="stmicro.html" class="menu-btn">STMicro</a>
+                <a href="microchip.html" class="menu-btn">Microchip</a>
+                <a href="expressif.html" class="menu-btn">Espressif</a>
+                <a href="texas.html" class="menu-btn">Texas Inst.</a>
+                <a href="nxp.html" class="menu-btn">NXP Semi</a>
+                <a href="infineon.html" class="menu-btn">Infineon</a>
+            </div>
+        </aside>
+
+        <main class="main-content-scrollable">
+            <div class="content-card">
+                
+                <h2>AI Disclosure</h2>
+                <p class="description">
+                    We, the undersigned members of Silly Core, hereby declare that no artificial intelligence tools, including but not limited to AI-assisted coding, content generation, or design tools, were used in the creation of this website project. All code, content, and design elements were produced entirely through our own knowledge, skills, and effort.
+                </p>
+
+                <div class="grid-container" style="margin-bottom: 4rem;">
+                    
+                    <div class="brand-card">
+                        <div class="card-image" style="height: 80px;">
+                            <img src="assets/signature_abad.png" alt="Signature" style="filter: none; max-width: 120px;">
+                        </div>
+                        <span class="brand-name">Miguel Andrei Abad</span>
+                    </div>
+
+                    <div class="brand-card">
+                        <div class="card-image" style="height: 80px;">
+                            <img src="assets/signature_chua.png" alt="Signature" style="filter: none; max-width: 120px;">
+                        </div>
+                        <span class="brand-name">Khyler Welsche Chua</span>
+                    </div>
+
+                    <div class="brand-card">
+                        <div class="card-image" style="height: 80px;">
+                            <img src="assets/signature_galvez.png" alt="Signature" style="filter: none; max-width: 120px;">
+                        </div>
+                        <span class="brand-name">Ron John Galvez</span>
+                    </div>
+
+                    <div class="brand-card">
+                        <div class="card-image" style="height: 80px;">
+                            <img src="assets/signature_marasigan.png" alt="Signature" style="filter: none; max-width: 120px;">
+                        </div>
+                        <span class="brand-name">Deandre Antonio Marasigan</span>
+                    </div>
+
+                    <div class="brand-card">
+                        <div class="card-image" style="height: 80px;">
+                            <img src="assets/signature_metrillo.png" alt="Signature" style="filter: none; max-width: 120px;">
+                        </div>
+                        <span class="brand-name">Brian David Metrillo</span>
+                    </div>
+                </div>
+
+                <h2>Image Source Disclosure</h2>
+                <p class="description">
+                    All manufacturer brand logos and product images featured on this website were sourced from publicly available online resources. These images are used solely for educational and informational purposes. All trademarks and logos remain the property of their respective owners.
+                </p>
+
+                <div class="declaration">
+                    <p>"We certify that no AI tools were used in the design, coding, debugging, or writing of this project."</p>
+                </div>
+            </div>
+        </main>
     </div>
 
-    <h1>Image Source Disclosure</h1>
-    <p>All manufacturer brand logos and product images featured on this website were sourced from publicly available online resources. These images are used solely for educational and informational purposes. All trademarks and logos remain the property of their respective owners.</p>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p class="copyright">&copy; 2026 <span class="brand">Silly Core</span>. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="disclosure.html">Disclosure</a> 
+                <span class="separator">|</span>
+                <a href="aboutpage.html">Developers</a> 
+            </div>
+        </div>
+    </footer>
 
-    <div class="declaration">
-        <p>"We certify that no AI tools were used in the design, coding, debugging, or writing of this project."</p>
-    </div>
-
+    <script src="js/app.js"></script>
 </body>
 </html>

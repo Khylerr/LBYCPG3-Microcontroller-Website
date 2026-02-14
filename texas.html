@@ -1,69 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Texas Instruments</title>
+    <title>Texas Instruments - Silly Core</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
 </head>
 
-<body class="manufacturer-page">
-    <img class = "TILogo" src="assets/TI.jpg" alt="logo">
-      <h1>Texas Instruments</h1>    
-     <p class = "description1">	Texas Instruments (TI) is an American multinational semiconductor company headquartered in Dallas, Texas. Founded in 1930, it specializes in designing, manufacturing, and selling analog and embedded processing chips. TI is one of the top 10 semiconductor companies worldwide, focusing on developing analog chips and embedded processors, which account for over 80% of its revenue. The company operates globally, with a commitment to manufacturing excellence and technological innovation, serving diverse markets including industrial, automotive, and personal electronics.
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <h1><span class="logo-symbol">Silly Core</span> : Your Home for all things Microcontrollers</h1>
+        </div>
+    </header>
 
-     </p>
-  
-      <table class = "products">
-                    <thead>
-                        <tr>
-                            <th>Product</th>
-                            <th>Description</th>
-                            <th>Datasheet</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>MSP430  </td>
-                            <td>
-                                <ul>
-                                <li>The  MSP430  16-bit ultra-low-power MCU family designed for battery-operated embedded applications where energy efficiency is critical. Typical uses include portable medical devices, smart sensors, utility meters, and industrial monitoring systems. Its standout feature is sub-microamp sleep currents with fast wake-up times, making it ideal for devices running on coin cells or energy harvesting.</li>
-                               </ul></td>
-                            </td>
-                            <td><a href="https://www.ti.com/lit/ds/symlink/msp430g2231.pdf" target="_blank">Download</a> </td>
-                        </tr>
-                        <tr><td>C2000 Real-Time MCUs </td>
-                            <td>
-                                <ul>
-                                <li>The C2000 is a 32-bit MCUs optimized for precision real-time control applications requiring deterministic, low-latency response. They excel in motor control, digital power supplies, solar inverters, and industrial automation due to integrated hardware accelerators for PWM generation, high-resolution ADCs, and control law computation. With over 25 years of development, they provide specialized peripherals for closed-loop control systems.</li>
-                                </ul>
-                            </td>
-                            <td><a href="https://www.digikey.com/en/htmldatasheets/production/1242269/0/0/1/c2000-concerto-mcu" target="_blank">Download</a> </td>
-                            
-                        <tr><td>Tiva C Series (ARM Cortex-M)</td>
-                            <td>
-                                <ul>
-                                <li>The Tiva ARM MCU’s are 32-bit MCUs built on the ARM Cortex-M4F core (with floating-point unit), including the TM4C123x (80 MHz, cost-effective) and TM4C129x (120 MHz, high connectivity) series. These general-purpose MCUs target embedded applications requiring connectivity, featuring integrated USB, Ethernet, CAN, and multiple serial interfaces, making them popular for IoT gateways, robotics, and educational platforms like the LaunchPad development kits.</li>
-                               </ul></td>
-                            </td>
-                            <td><a href="https://www.alldatasheet.com/datasheet-pdf/pdf/612762/TI1/TM4C123GH6PM.html" target="_blank">Download</a> </td>
-                        </tr>
+    <div class="page-layout-wrapper">
+        <aside id="sidebar" class="sidebar-container">
+            <button id="menu-toggle" class="glass-toggle-btn" aria-label="Toggle Navigation"><span class="arrow-icon">›</span></button>
+            <p class="section-label">General</p>
+            <div class="button-group">
+                <a href="index.html" class="menu-btn">Home</a>
+                <a href="aboutpage.html" class="menu-btn">About Us</a>
+            </div>
+            <p class="section-label">Manufacturers</p>
+            <div class="button-group">
+                <a href="stmicro.html" class="menu-btn">STMicro</a>
+                <a href="microchip.html" class="menu-btn">Microchip</a>
+                <a href="expressif.html" class="menu-btn">Espressif</a>
+                <a href="texas.html" class="menu-btn" style="color: var(--accent); border-bottom-color: var(--accent);">Texas Inst.</a>
+                <a href="nxp.html" class="menu-btn">NXP Semi</a>
+                <a href="infineon.html" class="menu-btn">Infineon</a>
+            </div>
+        </aside>
 
-                          <tr><td>Hercules Safety ARM MCU</td>
-                            <td>
-                                <ul>
-                                <li>Hercules Safety Microcontrollers are ARM-based MCUs (Cortex-R4/R5 and Cortex-M3/M4 cores) engineered specifically for functional safety-critical systems. They include hardware safety features like dual-core lockstep operation, ECC-protected memories, built-in self-test (BIST), and error signaling to meet certifications such as ISO 26262 (automotive) and IEC 61508 (industrial). Common applications include automotive braking/steering systems, medical equipment, and industrial safety controllers.</li>
-                               </ul></td>
-                            </td>
-                            <td><a href="https://media.digikey.com/pdf/Data%20Sheets/Texas%20Instruments%20PDFs/TMS570_Hercules_MCU_Web.pdf" target="_blank">Download</a> </td>
-                        </tr>
-                        
-                </table>
+        <main class="main-content-scrollable">
+            <div class="content-card">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <img src="assets/TI.jpg" alt="Texas Instruments Logo" style="max-width: 300px; height: auto; display: inline-block;">
+                </div>
+                <h1 style="text-align: center; margin-top: 0;">Texas Instruments</h1>
+                <p class="description">
+                    Texas Instruments (TI) is an American multinational semiconductor company headquartered in Dallas, Texas. Founded in 1930, it specializes in designing, manufacturing, and selling analog and embedded processing chips. TI is one of the top 10 semiconductor companies worldwide, focusing on developing analog chips and embedded processors, which account for over 80% of its revenue.
+                </p>
 
-    <div class="declaration">
-        <p>"We certify that no AI tools were used in the design, coding, debugging, or writing of this project."</p>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Description</th>
+                                <th>Datasheet</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>MSP430</td>
+                                <td>
+                                    <ul>
+                                        <li>The MSP430 16-bit ultra-low-power MCU family designed for battery-operated embedded applications where energy efficiency is critical. Typical uses include portable medical devices, smart sensors, utility meters, and industrial monitoring systems. Its standout feature is sub-microamp sleep currents with fast wake-up times.</li>
+                                    </ul>
+                                </td>
+                                <td><a href="https://www.ti.com/lit/ds/symlink/msp430g2231.pdf" target="_blank">Download</a></td>
+                            </tr>
+                            <tr>
+                                <td>C2000 Real-Time MCUs</td>
+                                <td>
+                                    <ul>
+                                        <li>The C2000 is a 32-bit MCUs optimized for precision real-time control applications requiring deterministic, low-latency response. They excel in motor control, digital power supplies, solar inverters, and industrial automation due to integrated hardware accelerators for PWM generation, high-resolution ADCs, and control law computation.</li>
+                                    </ul>
+                                </td>
+                                <td><a href="https://www.digikey.com/en/htmldatasheets/production/1242269/0/0/1/c2000-concerto-mcu" target="_blank">Download</a></td>
+                            </tr>
+                            <tr>
+                                <td>Tiva C Series (ARM Cortex-M)</td>
+                                <td>
+                                    <ul>
+                                        <li>The Tiva ARM MCU’s are 32-bit MCUs built on the ARM Cortex-M4F core (with floating-point unit), including the TM4C123x and TM4C129x series. These general-purpose MCUs target embedded applications requiring connectivity, featuring integrated USB, Ethernet, CAN, and multiple serial interfaces.</li>
+                                    </ul>
+                                </td>
+                                <td><a href="https://www.alldatasheet.com/datasheet-pdf/pdf/612762/TI1/TM4C123GH6PM.html" target="_blank">Download</a></td>
+                            </tr>
+                            <tr>
+                                <td>Hercules Safety ARM MCU</td>
+                                <td>
+                                    <ul>
+                                        <li>Hercules Safety Microcontrollers are ARM-based MCUs (Cortex-R4/R5 and Cortex-M3/M4 cores) engineered specifically for functional safety-critical systems. They include hardware safety features like dual-core lockstep operation, ECC-protected memories, built-in self-test (BIST), and error signaling to meet certifications such as ISO 26262.</li>
+                                    </ul>
+                                </td>
+                                <td><a href="https://media.digikey.com/pdf/Data%20Sheets/Texas%20Instruments%20PDFs/TMS570_Hercules_MCU_Web.pdf" target="_blank">Download</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="declaration"><p>"We certify that no AI tools were used in the design, coding, debugging, or writing of this project."</p></div>
+            </div>
+        </main>
     </div>
-
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p class="copyright">&copy; 2026 <span class="brand">Silly Core</span>. All rights reserved.</p>
+            <div class="footer-links"><a href="disclosure.html">Disclosure</a> <span class="separator">|</span> <a href="aboutpage.html">Developers</a></div>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>
