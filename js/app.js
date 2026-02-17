@@ -60,7 +60,7 @@
             // Dynamically create a "No Results" message element using JavaScript
             // This is better than hiding it in HTML because we create it only when needed.
             const noResultsMsg = document.createElement('div');
-            noResultsMsg.className = 'no-results-message'; // Matches CSS class we added earlier
+            noResultsMsg.className = 'no-results-message';
             noResultsMsg.textContent = 'No matching products found.';
             
             // Insert this new message div immediately after the table in the DOM
