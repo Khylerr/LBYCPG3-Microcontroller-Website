@@ -158,7 +158,7 @@
                 // As the track moves left, the images inside pan right (object-position)
                 for(const image of track.getElementsByClassName("track-image")) {
                     image.animate({
-                        objectPosition: `${100 + nextPercentage}% center`
+                        objectPosition: `${100 + (nextPercentage * 1.2)}% center`
                     }, { duration: 1200, fill: "forwards" });
                 }
             }
