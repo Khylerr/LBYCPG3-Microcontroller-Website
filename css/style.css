@@ -265,7 +265,7 @@ td a {
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(0, 86, 210, 0.2); /* Subtle accent border */
-    border-radius: 6px; /* Slight rounding for button feel */
+    border-radius: 6px; 
     box-shadow: 0 2px 4px rgba(0,0,0,0.03);
     
     transition: all 0.2s ease;
@@ -336,9 +336,34 @@ td a:active {
 .declaration { text-align: center; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #D1D5DB; font-style: italic; color: #888; font-size: 0.8rem; }
 
 @media (max-width: 600px) {
-    .site-header h1 { font-size: 1rem; }
-    .content-card { padding: 1.5rem 1rem; }
-    .glass-toggle-btn { width: 30px; right: -30px; }
+    .site-header { 
+        height: auto; 
+        padding: 12px 1rem; 
+    }
+    .site-header h1 { 
+        font-size: 1.1rem; 
+        white-space: normal; /* Allows the long title to wrap onto a second line */
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .site-footer {
+        height: auto; 
+        padding: 15px 1rem; /* Removed the 80px bottom padding */
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .content-card { 
+        padding: 1.5rem 1rem; 
+    }
+    .glass-toggle-btn { 
+        width: 30px; 
+        right: -30px; 
+    }
 }
 
 /* === SEARCH BAR STYLES === */
@@ -435,4 +460,30 @@ td a:active {
     object-position: 100% center; /* Start position for parallax */
     transition: transform 0.2s;
     pointer-events: none; /* Prevents image dragging ghost */
+}
+
+/* === FLOATING NEWSLETTER BUTTON === */
+.floating-newsletter-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--accent);
+    color: #FFFFFF;
+    padding: 12px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 15px rgba(0, 86, 210, 0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.floating-newsletter-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 86, 210, 0.4);
+    color: #FFFFFF;
 }
