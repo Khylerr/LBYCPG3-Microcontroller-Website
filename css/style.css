@@ -335,6 +335,21 @@ td a:active {
 .footer-links a:hover { color: var(--accent); text-decoration: underline; }
 .declaration { text-align: center; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #D1D5DB; font-style: italic; color: #888; font-size: 0.8rem; }
 
+body.newsletter-page {
+    background-color: var(--main-bg);
+    overflow-y: auto;
+    height: auto;
+}
+
+.form-container {
+    background: #FFFFFF;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
 @media (max-width: 600px) {
     .site-header { 
         height: auto; 
@@ -363,6 +378,10 @@ td a:active {
     .glass-toggle-btn { 
         width: 30px; 
         right: -30px; 
+    }
+
+    .form-container {
+        padding: 2rem 1.5rem; /* Slightly tighter padding on mobile devices */
     }
 }
 
