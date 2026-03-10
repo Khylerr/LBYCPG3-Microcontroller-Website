@@ -20,7 +20,7 @@
 
 html, body {
     height: 100%;
-    overflow: hidden;
+    overflow: auto;
     font-size: 15px; /* Set a slightly smaller base size */
 }
 
@@ -337,7 +337,7 @@ td a:active {
 
 body.newsletter-page {
     background-color: var(--main-bg);
-    overflow-y: auto;
+    overflow: hidden;
     height: auto;
 }
 
